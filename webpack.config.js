@@ -9,7 +9,7 @@ const webpack = require('webpack');
 module.exports = {
   entry: './index.js',
   output: {
-    path: path.resolve('dist'),
+    path: path.resolve('build'),
     filename: 'js/script.min.js'
   },
   module: {
