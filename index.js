@@ -6,7 +6,7 @@ require('./sass/styles.sass');
 
 var recipies = JSON.parse(localStorage.getItem('_ysajid_recipes'));
 
-if(!recipies) {
+if(recipies == null) {
     recipies = [
         {
             "name" : "Empty Box",
