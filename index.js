@@ -6,22 +6,12 @@ require('./sass/styles.sass');
 
 var recipies = JSON.parse(localStorage.getItem('_ysajid_recipes'));
 
-if(recipies) {
+if(!recipies) {
     recipies = [
         {
-            "name" : "First",
-            "description" : "a simple desc",
-            "items" : "alu, potol"
-        },
-        {
-            "name" : "First",
-            "description" : "a simple desc",
-            "items" : "alu, potol"
-        },
-        {
-            "name" : "First",
-            "description" : "a simple desc",
-            "items" : "alu, potol"
+            "name" : "Empty Box",
+            "description" : "",
+            "items" : ","
         }
     ];
     localStorage.setItem('_ysajid_recipes', JSON.stringify(recipies));
